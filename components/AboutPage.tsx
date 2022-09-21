@@ -22,7 +22,7 @@ const AboutPage = () => {
       const card3 = document.getElementById('card3') as HTMLDivElement;
 
       if (window.innerWidth < 650) {
-        card1.addEventListener('clic1k', () => {
+        card1.addEventListener('click', () => {
           card1.style.zIndex = '10';
           card1.style.opacity = '1';
           card2.style.zIndex = '9';

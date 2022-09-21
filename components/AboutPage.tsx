@@ -4,6 +4,7 @@ import Image from 'next/image';
 import norma from '../assets/images/children1.svg';
 import Footer from './Footer';
 import { useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
 
 const AboutPage = () => {
   const [popup, setPopup] = useState(false);
@@ -89,6 +90,7 @@ const AboutPage = () => {
               src={norma}
               layout="fill"
               priority
+              alt=""
             />
           </div>
         </div>
@@ -116,10 +118,7 @@ const AboutPage = () => {
               trainings and one-on-one trainings. This process will include a
               lot of follow-ups, mentoring and character-building, all of which
               must be agreed on by the student or parent before admission is
-              approved.{' '}
-              <a className={styles.link} onClick={handlePopup}>
-                Learn more
-              </a>
+              approved. <a onClick={handlePopup}>Learn more</a>
             </p>
           </div>
           {popup && (
@@ -144,14 +143,18 @@ const AboutPage = () => {
               We focus on young people between the age of 10 to 25 who have
               either finished college education or still in the college, who
               want to learn any of the course on the{' '}
-              <a href="/careerpath">career path</a> page and impact their
-              environment.
+              <Link href="/careerpath">
+                <a>career path</a>
+              </Link>{' '}
+              page and impact their environment.
             </p>
             <p>
               We want to help anyone acquire skill, so if you do not fall into
               the above category but have the desire and passion to learn,
               kindly let us know by sending an email to{' '}
-              <a href="mailto:info@youngrise.org">info@youngrise.org</a>
+              <Link href="mailto:info@youngrise.org">
+                <a>info@youngrise.org</a>
+              </Link>
             </p>
           </div>
         </div>

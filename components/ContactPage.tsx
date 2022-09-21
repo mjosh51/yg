@@ -6,7 +6,7 @@ import LocationIcon from '../assets/images/locationicon.svg';
 import MailIcon from '../assets/images/mailicon.svg';
 import FacebookIcon from '../assets/images/fbicon.svg';
 import TwitterIcon from '../assets/images/twittericon.svg';
-import InstagramIcon from '../assets/images/instagramIcon.svg';
+import InstagramIcon from '../assets/images/instagramicon.svg';
 import LinkedInIcon from '../assets/images/linkedinicon.svg';
 import Image from 'next/image';
 
@@ -125,18 +125,36 @@ const ContactPage = () => {
               <div className={styles.contactOptions}>
                 <div className={styles.contactOption}>
                   <div>
-                    <Image src={PhoneIcon} width={40} height={40} priority />
+                    <Image
+                      src={PhoneIcon}
+                      width={40}
+                      height={40}
+                      alt=""
+                      priority
+                    />
                   </div>
                   <p>+234 xxx xxx xxxx</p>
                 </div>
                 <div className={styles.contactOption}>
                   <div>
-                    <Image src={MailIcon} width={40} height={40} priority />
+                    <Image
+                      src={MailIcon}
+                      width={40}
+                      height={40}
+                      alt=""
+                      priority
+                    />
                   </div>
                   <p>info@youngrise.com</p>
                 </div>
                 <div className={styles.contactOption}>
-                  <Image src={LocationIcon} width={60} height={60} priority />
+                  <Image
+                    src={LocationIcon}
+                    width={60}
+                    height={60}
+                    alt=""
+                    priority
+                  />
                   <p>
                     6, Dagunro Close, behind Total filling Station, Ojota Lagos
                   </p>
@@ -146,21 +164,40 @@ const ContactPage = () => {
               <div className={styles.asideBottom}>
                 <div className={styles.socialOptions}>
                   <div className={styles.socialOption}>
-                    <Image src={FacebookIcon} width={25} height={25} priority />
+                    <Image
+                      src={FacebookIcon}
+                      width={25}
+                      height={25}
+                      alt=""
+                      priority
+                    />
                   </div>
                   <div className={styles.socialOption}>
-                    <Image src={TwitterIcon} width={25} height={25} priority />
+                    <Image
+                      src={TwitterIcon}
+                      width={25}
+                      height={25}
+                      alt=""
+                      priority
+                    />
                   </div>
                   <div className={styles.socialOption}>
                     <Image
                       src={InstagramIcon}
                       width={25}
                       height={25}
+                      alt=""
                       priority
                     />
                   </div>
                   <div className={styles.socialOption}>
-                    <Image src={LinkedInIcon} width={25} height={25} priority />
+                    <Image
+                      src={LinkedInIcon}
+                      width={25}
+                      height={25}
+                      alt=""
+                      priority
+                    />
                   </div>
                 </div>
                 <div className={styles.shape1}></div>

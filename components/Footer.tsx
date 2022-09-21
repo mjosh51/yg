@@ -20,7 +20,7 @@ const Footer = () => {
         <div className={styles.firstColumn}>
           <Link href="/">
             <a>
-              <Image src={logo} width={80} height={50} layout="fixed" />
+              <Image src={logo} width={80} height={50} alt="" layout="fixed" />
             </a>
           </Link>
           <p className={styles.beliefText}>
@@ -88,7 +88,13 @@ const Footer = () => {
         </div>
 
         <div className={styles.footerGraphicContainer}>
-          <Image src={footergraphic} width={150} height={200} layout="fixed" />
+          <Image
+            src={footergraphic}
+            width={150}
+            height={200}
+            alt=""
+            layout="fixed"
+          />
         </div>
       </div>
     </div>

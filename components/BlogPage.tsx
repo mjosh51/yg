@@ -1,6 +1,7 @@
 import styles from '../styles/BlogPage.module.css';
 import ComingSoon from '../assets/images/comingsoon.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const BlogPage = () => {
   return (
@@ -10,11 +11,13 @@ const BlogPage = () => {
           <div className={styles.wrapper}>
             coming soon...
             <span>
-              <Image src={ComingSoon} />
+              <Image src={ComingSoon} alt="" />
             </span>
           </div>
           <div className={styles.back}>
-            <a href="/">Go Back to Homepage</a>
+            <Link href="/">
+              <a>Go Back to Homepage</a>
+            </Link>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import Logo from '../assets/images/headerlogo.svg';
 import TeamSuccess from '../assets/images/teamsuccess.svg';
 import GoogleIcon from '../assets/images/googleicon.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const SignInPage = () => {
   return (
@@ -49,11 +50,15 @@ const SignInPage = () => {
                     <div className={styles.accountFormMain}>
                       <div className={styles.header}>
                         <span id="signin">
-                          <a href="/sign_in">Sign In</a>
+                          <Link href="/sign_in">
+                            <a>Sign In</a>
+                          </Link>
                         </span>
 
                         <span id="signup">
-                          <a href="/sign_up">Sign Up</a>
+                          <Link href="/sign_up">
+                            <a>Sign Up</a>
+                          </Link>
                         </span>
                       </div>
 
@@ -78,7 +83,9 @@ const SignInPage = () => {
                           <input type="checkbox" name="savelogin" />
                           <label htmlFor="savelogin">Remember me</label>
                         </div>
-                        <a href="/forgotpassword">Recovery Password</a>
+                        <Link href="/forgotpassword">
+                          <a>Recovery Password</a>
+                        </Link>
                       </div>
 
                       <div className={styles.actionButtons}>
@@ -90,6 +97,7 @@ const SignInPage = () => {
                             src={GoogleIcon}
                             width={20}
                             height={20}
+                            alt=""
                             layout="fixed"
                           />
                           <span>Sign Up With Google</span>
@@ -99,8 +107,13 @@ const SignInPage = () => {
                     <div className={styles.formFooter}>
                       <p>
                         By clicking the button above, you agree to our{' '}
-                        <a href="/terms">terms of use</a> and{' '}
-                        <a href="/privacy">privacy policies</a>
+                        <Link href="/terms">
+                          <a>terms of use</a>
+                        </Link>{' '}
+                        and{' '}
+                        <Link href="/privacy">
+                          <a>privacy policies</a>
+                        </Link>
                       </p>
                     </div>
                   </form>

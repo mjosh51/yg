@@ -4,6 +4,7 @@ import TeamSuccess from '../assets/images/teamsuccess.svg';
 import GoogleIcon from '../assets/images/googleicon.svg';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const SignUpPage = () => {
   // const [isSignIn, setIsSignIn] = useState(false);
@@ -56,10 +57,14 @@ const SignUpPage = () => {
                     <div className={styles.accountFormMain}>
                       <div className={styles.header}>
                         <span id="signin">
-                          <a href="/sign_in">Sign In</a>
+                          <Link href="/sign_in">
+                            <a>Sign In</a>
+                          </Link>
                         </span>
                         <span id="signup">
-                          <a href="/sign_up">Sign Up</a>
+                          <Link href="/sign_up">
+                            <a>Sign Up</a>
+                          </Link>
                         </span>
                       </div>
                       <div className={styles.signupBox} id="signupbox">
@@ -134,6 +139,7 @@ const SignUpPage = () => {
                             width={20}
                             height={20}
                             layout="fixed"
+                            alt=""
                           />
                           <span>Sign Up With Google</span>
                         </div>

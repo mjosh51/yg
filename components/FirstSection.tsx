@@ -32,6 +32,7 @@ const FirstSection = () => {
           <Image
             className={styles.illustration}
             src={JoinUs}
+            alt=""
             layout="fill"
             priority
           />
@@ -45,7 +46,7 @@ const FirstSection = () => {
         </div>
         <div className={styles.container}>
           <div className={styles.imageContainer}>
-            <Image src={Line} width={270} height={0} />
+            <Image src={Line} width={270} height={0} alt="" />
           </div>
           <p className={styles.bigText}>
             <span className={styles.bigTag}>Learn </span>New Skill &amp; Start{' '}
@@ -72,19 +73,37 @@ const FirstSection = () => {
             <span>
               <Link href="/">
                 <a>
-                  <Image src={Discord} width={90} height={30} layout="fixed" />
+                  <Image
+                    src={Discord}
+                    width={90}
+                    height={30}
+                    alt=""
+                    layout="fixed"
+                  />
                 </a>
               </Link>
             </span>
 
             <Link href="/">
               <a>
-                <Image src={Slack} width={90} height={30} layout="fixed" />
+                <Image
+                  src={Slack}
+                  width={90}
+                  height={30}
+                  alt=""
+                  layout="fixed"
+                />
               </a>
             </Link>
             <Link href="/">
               <a>
-                <Image src={Telegram} width={90} height={30} layout="fixed" />
+                <Image
+                  src={Telegram}
+                  width={90}
+                  height={30}
+                  alt=""
+                  layout="fixed"
+                />
               </a>
             </Link>
           </div>

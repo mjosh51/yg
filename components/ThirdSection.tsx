@@ -47,6 +47,7 @@ const ThirdSection = () => {
             src={Arrow}
             width={200}
             height={200}
+            alt=""
             layout="fixed"
           />
         </div>
@@ -57,6 +58,7 @@ const ThirdSection = () => {
             src={MasterSkill}
             // width={400}
             // height={400}
+            alt=""
             layout="fill"
           />
         </div>

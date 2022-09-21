@@ -21,21 +21,21 @@ const FifthSection = () => {
   return (
     <div className={styles.fifthWrapper}>
       <h2 className={styles.fifthHeading}>
-        Let's walk together on the path to fulfill those beautiful dreams
+        Let&apos;s walk together on the path to fulfill those beautiful dreams
       </h2>
       <div className={styles.fifthContainer}>
         <div className={styles.next}>
-          <Image src={BackArrow} />
+          <Image src={BackArrow} alt="" />
         </div>
 
         <div className={styles.fifthImagesContainer}>
-          <Image src={Slide2} width={190} height={190} />
-          <Image src={Slide1} width={600} height={500} />
-          <Image src={Slide3} width={190} height={190} />
+          <Image src={Slide2} width={190} height={190} alt="" />
+          <Image src={Slide1} width={600} height={500} alt="" />
+          <Image src={Slide3} width={190} height={190} alt="" />
         </div>
 
         <div className={styles.next}>
-          <Image src={NextArrow} />
+          <Image src={NextArrow} alt="" />
         </div>
       </div>
 

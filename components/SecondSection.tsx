@@ -29,7 +29,13 @@ const SecondSection = () => {
           <Link href="/coding">
             <div className={styles.category__container}>
               <div className={styles.category__image__container}>
-                <Image width={70} height={90} src={Coding} layout="fixed" />
+                <Image
+                  width={70}
+                  height={90}
+                  src={Coding}
+                  alt=""
+                  layout="fixed"
+                />
               </div>
 
               <h4 className={styles.category__title}>Coding and Web</h4>
@@ -42,7 +48,13 @@ const SecondSection = () => {
           <Link href="/">
             <div className={styles.category__container}>
               <div className={styles.category__image__container}>
-                <Image width={80} height={80} src={Cybersec} layout="fixed" />
+                <Image
+                  width={80}
+                  height={80}
+                  src={Cybersec}
+                  alt=""
+                  layout="fixed"
+                />
               </div>
               <h4 className={styles.category__title}>Cybersecurity</h4>
               <p className={styles.category__brief}>
@@ -55,7 +67,13 @@ const SecondSection = () => {
           <Link href="/">
             <div className={styles.category__container}>
               <div className={styles.category__image__container}>
-                <Image width={80} height={80} src={Graphics} layout="fixed" />
+                <Image
+                  width={80}
+                  height={80}
+                  src={Graphics}
+                  alt=""
+                  layout="fixed"
+                />
               </div>
               <h4 className={styles.category__title}>Graphics Design</h4>
               <p className={styles.category__brief}>
@@ -67,7 +85,7 @@ const SecondSection = () => {
           <Link href="/">
             <div className={styles.category__container}>
               <div className={styles.category__image__container}>
-                <Image width={70} height={70} src={Art} layout="fixed" />
+                <Image width={70} height={70} src={Art} alt="" layout="fixed" />
               </div>
               <h4 className={styles.category__title}>Art and Craft</h4>
               <p className={styles.category__brief}>

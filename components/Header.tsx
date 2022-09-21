@@ -128,9 +128,9 @@ const Header = () => {
             </div>
             <ul className={styles.toggledMenuListParent}>
               <li className={styles.toggledMenuList}>
-                <Link href="/">
-                  <a>Home</a>
-                </Link>
+               
+                  <a href="/">Home</a>
+               
               </li>
               <li className={styles.toggledMenuList}>
                 <Link href="/about">

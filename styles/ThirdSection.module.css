@@ -1,0 +1,235 @@
+/*Third Section styles*/
+
+.registerButton {
+  background: #ff7978;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.6rem 1rem;
+  width: 7rem;
+}
+
+.parent {
+  background: #f8f1f1;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #3a3292;
+}
+
+.brief {
+  font-size: 0.9rem;
+  color: #787878;
+}
+
+.masterSkill {
+  object-fit: cover;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+
+/*Xtra-small screens*/
+@media screen and (max-width: 300px) {
+  .parent {
+    padding-bottom: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .masterSkillContainer {
+    width: 100%;
+    position: relative;
+    height: 25rem;
+  }
+
+  .arrowContainer {
+    display: none;
+  }
+}
+/*Smaller screens*/
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .parent {
+    padding-bottom: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
+  .masterSkillContainer {
+    width: 100%;
+    position: relative;
+    height: 25rem;
+  }
+
+  .arrowContainer {
+    display: none;
+  }
+}
+/*small-medium screens*/
+@media screen and (min-width: 641px) and (max-width: 690px) {
+  .parent {
+    padding: 0;
+    padding-top: 3rem;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .masterSkillContainer {
+    width: 100%;
+    position: relative;
+    height: 20rem;
+  }
+
+  .arrowContainer {
+    display: none;
+  }
+}
+/*Medium screens*/
+@media screen and (min-width: 700px) and (max-width: 992px) {
+  .parent {
+    padding: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .container {
+    margin-left: 3rem;
+  }
+
+  .masterSkillContainer {
+    position: relative;
+    height: 25rem;
+    width: 100%;
+  }
+
+  .arrowContainer {
+    display: none;
+  }
+}
+/*Medium-Large screens*/
+@media screen and (min-width: 1000px) and (max-width: 1275px) {
+  .parent {
+    padding: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .container {
+    margin-left: 3rem;
+  }
+
+  .masterSkillContainer {
+    width: 100%;
+    position: relative;
+    height: 25rem;
+  }
+}
+/*Large screens*/
+@media screen and (min-width: 1280px) and (max-width: 1500px) {
+  .parent {
+    padding: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .container {
+    margin-left: 3rem;
+  }
+
+  .masterSkillContainer {
+    width: 100%;
+    position: relative;
+    height: 25rem;
+  }
+}
+/*Xtra Large screens*/
+@media screen and (min-width: 1536px) and (max-width: 3000px) {
+  .wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .masterSkillContainer {
+    width: 100%;
+    position: relative;
+    height: 25rem;
+  }
+}
+/*Xtra-Xtra-Large screens*/
+@media screen and (min-width: 3100px) {
+  .wrapper {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .masterSkillContainer {
+    width: 100%;
+    position: relative;
+    height: 25rem;
+  }
+}

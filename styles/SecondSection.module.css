@@ -1,0 +1,148 @@
+/*Second Section styles*/
+
+.wrapper {
+  width: 100%;
+}
+
+.parent {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.categories__heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.categories {
+  display: flex;
+  gap: 1rem;
+}
+
+.category__container {
+  background: #f8f1f1;
+  border-radius: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.category__title {
+  font-weight: bold;
+  color: #ff7978;
+  text-align: center;
+}
+
+.category__brief {
+  text-align: center;
+}
+
+.category__image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.learnMoreButton {
+  background: #000;
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 7px;
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/*Xtra-small screens*/
+@media screen and (max-width: 300px) {
+  .parent {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .categories {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* .learnMoreButton {
+    margin: 1rem 0;
+  } */
+}
+/*Smaller screens*/
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .parent {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .categories {
+    display: grid;
+    gap: 1rem;
+    /* grid-template-columns: repeat(1, 1fr); */
+  }
+
+  .learnMoreButton {
+    margin-top: 1rem;
+  }
+}
+/*small-medium screens*/
+@media screen and (min-width: 641px) and (max-width: 690px) {
+  .parent {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .categories {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*Medium screens*/
+@media screen and (min-width: 700px) and (max-width: 992px) {
+  .parent {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .categories {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*Medium-Large screens*/
+@media screen and (min-width: 1000px) and (max-width: 1275px) {
+  .parent {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/*Large screens*/
+@media screen and (min-width: 1280px) and (max-width: 1500px) {
+  .parent {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/*Xtra Large screens*/
+@media screen and (min-width: 1536px) and (max-width: 3000px) {
+  .parent {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+/*Xtra-Xtra-Large screens*/
+@media screen and (min-width: 3100px) {
+  .parent {
+    width: 30%;
+    margin: 0 auto;
+  }
+}

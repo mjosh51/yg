@@ -1,0 +1,66 @@
+/*  Fifth Section Styles */
+.fifthWrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.fifthHeading {
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.fifthContainer {
+  display: flex;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.fifthImagesContainer {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: -1rem;
+  padding-bottom: 1rem;
+}
+
+.next {
+  height: 5rem;
+}
+
+@media screen and (max-width: 300px) {
+  .fifthHeading {
+    width: 15rem;
+    font-size: 1rem;
+  }
+
+  .fifthImagesContainer {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .fifthHeading {
+    width: 20rem;
+  }
+}
+
+/*Xtra Large screens*/
+@media screen and (min-width: 1536px) and (max-width: 3000px) {
+  .fifthContainer {
+    width: 50%;
+  }
+}
+/*Xtra-Xtra-Large screens*/
+@media screen and (min-width: 3100px) {
+  .fifthContainer {
+    width: 30%;
+  }
+}

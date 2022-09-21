@@ -1,0 +1,431 @@
+.container {
+  /* height: 100vh; */
+  padding: 0;
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  background-image: url(../assets/images/childrenbright.svg);
+  /* background-color: rgba(0, 0, 0, 1); */
+  /* background-color: #29379b; */
+  /* background-color: #4255e7; */
+  background-color: #000f41;
+  color: #fff;
+  width: 100%;
+  height: 30rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.firstSectionBody {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  color: floralwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50%;
+  animation: caption 5s infinite ease-in-out;
+  overflow-x: hidden;
+}
+
+@keyframes caption {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.aboutUsContainer {
+  /* background: #f7f7f7; */
+  background: #f8f1f1;
+  padding: 2rem 0;
+  clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
+  height: 40rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.aboutUs {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  color: #000;
+  gap: 3rem;
+}
+
+.textBody {
+  width: 50rem;
+}
+
+.imageContainer {
+  width: 100%;
+  position: relative;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+}
+
+/* .norma {
+  /* border-radius: 200px 0; */
+/* clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  ); */
+/* clip-path: polygon(
+    50% 0%,
+    70% 0,
+    100% 0,
+    68% 57%,
+    79% 91%,
+    50% 91%,
+    21% 91%,
+    31% 57%,
+    0 0,
+    18% 0
+  ); */
+
+.highlight {
+  color: #ff7978;
+  font-weight: bold;
+}
+
+/* .active {
+  z-index: 15;
+} */
+
+.cardsContainer {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 45rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.card1 {
+  border-radius: 20px;
+  width: 20rem;
+  background: #fff;
+  padding: 10px 30px;
+  position: absolute;
+  z-index: 10;
+  left: 10%;
+  top: -25%;
+  cursor: pointer;
+}
+
+.card2 {
+  border-radius: 20px;
+  width: 20rem;
+  background: #fff;
+  padding: 10px 30px;
+  position: absolute;
+  z-index: 10;
+  right: 10%;
+  top: 15%;
+  cursor: pointer;
+}
+
+.moreBluePrint {
+  border-radius: 20px;
+  width: 20rem;
+  background: #fff;
+  padding: 10px 30px;
+  padding-top: 30px;
+  position: absolute;
+  z-index: 20;
+  right: 12%;
+  top: 12%;
+  cursor: pointer;
+}
+
+.card3 {
+  border-radius: 20px;
+  width: 20rem;
+  background: #fff;
+  padding: 10px 30px;
+  position: absolute;
+  z-index: 10;
+  left: 10%;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.cardtitle {
+  text-align: center;
+}
+
+.card3 a {
+  color: blue;
+}
+
+.card3 a:visited {
+  color: purple;
+}
+
+.thirdSection {
+  /* background: #9e1b32; */
+  background: #ff7978;
+  clip-path: polygon(0% 28%, 100% 0%, 100% 100%, 0 100%);
+  padding: 2rem 0;
+  margin-top: -12rem;
+  height: 30rem;
+  z-index: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.fourthSection {
+  height: 30rem;
+  background-image: url(../assets/images/boy.svg);
+  /* background-color: #4255e7; */
+  background-color: #000f41;
+  background-size: cover;
+  /* opacity: 0.9; */
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media screen and (max-width: 300px) {
+  .card1 {
+    width: 15rem;
+    left: 6%;
+  }
+
+  .card2 {
+    width: 15rem;
+    right: 6%;
+  }
+
+  .moreBluePrint {
+    right: 6%;
+    top: 14%;
+  }
+
+  .card3 {
+    width: 15rem;
+    left: 6%;
+  }
+}
+
+@media screen and (min-width: 310px) and (max-width: 405px) {
+  .card1 {
+    width: 17rem;
+    left: 6%;
+  }
+
+  .card2 {
+    width: 17rem;
+    right: 6%;
+  }
+
+  .moreBluePrint {
+    right: 6%;
+    top: 14%;
+  }
+
+  .card3 {
+    width: 17rem;
+    left: 6%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card1 {
+    opacity: 0.4;
+  }
+
+  .card2 {
+    opacity: 1;
+  }
+
+  .card3 {
+    opacity: 0.4;
+    z-index: 9;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 690px) {
+  .card1 {
+    width: 18rem;
+    left: 6%;
+  }
+
+  .card2 {
+    width: 18rem;
+    right: 6%;
+  }
+
+  .moreBluePrint {
+    width: 18rem;
+    right: 6%;
+    top: 13%;
+  }
+
+  .card3 {
+    width: 18rem;
+    left: 6%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 790px) {
+  .card1 {
+    width: 18rem;
+    left: 6%;
+  }
+
+  .card2 {
+    width: 18rem;
+    right: 6%;
+  }
+
+  .moreBluePrint {
+    width: 18rem;
+    right: 6%;
+    top: 13%;
+  }
+
+  .card3 {
+    width: 18rem;
+    left: 6%;
+  }
+}
+
+@media screen and (min-width: 798px) and (max-width: 992px) {
+  .card1 {
+    left: 6%;
+    top: -25%;
+  }
+
+  .card2 {
+    right: 6%;
+    top: 15%;
+  }
+
+  .moreBluePrint {
+    right: 6%;
+    top: 12%;
+  }
+
+  .card3 {
+    left: 6%;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1275px) {
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1500px) {
+}
+
+@media screen and (min-width: 1536px) and (max-width: 2000px) {
+  .aboutUs {
+    width: 50%;
+  }
+
+  .cards {
+    width: 50%;
+  }
+
+  .card1 {
+    left: 30%;
+    top: -25%;
+  }
+
+  .card2 {
+    right: 30%;
+    top: 15%;
+  }
+
+  .moreBluePrint {
+    right: 30%;
+    top: 12%;
+  }
+
+  .card3 {
+    left: 30%;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 2050px) and (max-width: 2600px) {
+  .aboutUs {
+    width: 50%;
+  }
+
+  .cards {
+    width: 50%;
+  }
+
+  .card1 {
+    left: 30%;
+    top: -25%;
+  }
+
+  .card2 {
+    right: 30%;
+    top: 15%;
+  }
+
+  .moreBluePrint {
+    right: 30%;
+    top: 12%;
+  }
+
+  .card3 {
+    left: 30%;
+    bottom: 0;
+  }
+
+  .aboutFooter {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 3100px) {
+  .aboutUs {
+    width: 30%;
+  }
+
+  .cards {
+    width: 30%;
+  }
+
+  .card1 {
+    left: 40%;
+    top: -25%;
+  }
+
+  .card2 {
+    right: 40%;
+    top: 15%;
+  }
+
+  .moreBluePrint {
+    right: 40%;
+    top: 12%;
+  }
+
+  .card3 {
+    left: 40%;
+    bottom: 0;
+  }
+}

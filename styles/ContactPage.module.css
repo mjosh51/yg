@@ -1,0 +1,576 @@
+.container {
+  /* height: 100vh; */
+  padding: 0;
+  margin: 0;
+  display: grid;
+  /* gap: 3rem; */
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  background-image: url(../assets/images/contactus.svg);
+  /* background-color: rgba(0, 0, 0, 1); */
+  /* background-color: #29379b; */
+  /* background-color: #4255e7; */
+  background-color: #000f41;
+  color: #fff;
+  width: 100%;
+  height: 30rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.firstSectionBody {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  color: floralwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50%;
+  animation: caption 5s infinite linear;
+}
+
+@keyframes caption {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.bodyParent {
+  background-image: url(../assets/images/formbackground.svg);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.secondSectionBodyContainer {
+  margin: 3rem 0;
+}
+
+.secondSectionBody {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.contactHeading {
+  text-align: center;
+}
+
+.contactHead {
+  font-size: 2rem;
+}
+
+.contactSubHead {
+  font-size: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem;
+  background: rgba(238, 238, 238, 0.7);
+  border-radius: 20px;
+  width: 60%;
+}
+
+.name {
+  display: flex;
+  gap: 3rem;
+}
+
+.mailAndPhone {
+  display: flex;
+  gap: 3rem;
+}
+
+.shortLengthInput {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding: 0.5rem 0;
+  width: 250px;
+  font-size: 1.1rem;
+}
+
+.shortLengthInput:focus {
+  box-shadow: 0 3px 0 0 #29379b;
+}
+
+.statusContainer label:first-child {
+  font-weight: bold;
+}
+
+.status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.status__child__element {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.status input {
+  margin: 0;
+}
+
+/* .dataCollector {
+  display: grid;
+  gap: 0.5rem;
+} */
+
+.messageBox {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+}
+
+.messageBox:focus {
+  box-shadow: 0 3px 0 0 #29379b;
+}
+
+.aside {
+  background: #000f41;
+  border-radius: 20px;
+  padding: 1rem 0;
+  width: 40%;
+  height: 43rem;
+  color: #fff;
+  display: grid;
+  gap: 2rem;
+}
+
+.asideHeader {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.asideHeader h1 {
+  font-size: 1.7rem;
+}
+
+.asideHeader p {
+  color: floralwhite;
+}
+
+.contactOptions {
+  display: grid;
+  gap: 1.5rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contactOption {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 20rem;
+}
+
+/* .contactOptionImageContainer {
+  width: 10%;
+  height: 8rem;
+  position: relative;
+} */
+
+.asideBottom {
+  display: flex;
+}
+
+.shape1 {
+  background-image: linear-gradient(
+    174.2deg,
+    rgba(255, 244, 228, 1) 7.1%,
+    rgba(240, 246, 238, 1) 67.4%
+  );
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 10%;
+  margin-top: 1.5rem;
+  z-index: 10;
+  opacity: 0.5;
+}
+
+.shape2 {
+  background-color: #ff7978;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 5%;
+  margin-top: -1rem;
+  clip-path: circle(45% at 85% 70%);
+  /* transition: 0.3s; */
+  opacity: 0.9;
+  border-bottom-right-radius: 20px;
+}
+
+.shape3 {
+}
+
+.socialOptions {
+  display: flex;
+  gap: 2rem;
+  margin-top: 7rem;
+  padding-left: 8%;
+}
+
+@media screen and (max-width: 310px) {
+  .secondSectionBody {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+
+  .name {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .mailAndPhone {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .shortLengthInput {
+    width: 200px;
+  }
+
+  .messageBox {
+    width: 200px;
+  }
+
+  .aside {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+
+  .asideHeader h1 {
+    font-size: 1.5rem;
+  }
+
+  .contactOption {
+    width: 11rem;
+  }
+
+  .socialOptions {
+    gap: 1.5rem;
+  }
+
+  .shape1 {
+    display: none;
+  }
+
+  .shape2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 388px) {
+  .secondSectionBody {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+
+  .name {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .mailAndPhone {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .shortLengthInput {
+    width: 250px;
+  }
+
+  .messageBox {
+    width: 250px;
+  }
+
+  .aside {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+
+  .asideHeader h1 {
+    font-size: 1.5rem;
+  }
+
+  .contactOption {
+    width: 14rem;
+  }
+
+  .socialOptions {
+    gap: 1.5rem;
+  }
+
+  .shape1 {
+    display: none;
+  }
+
+  .shape2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 389px) and (max-width: 545px) {
+  .secondSectionBody {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .mailAndPhone {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .shortLengthInput {
+    width: 250px;
+  }
+
+  .messageBox {
+    width: 250px;
+  }
+
+  .aside {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+
+  .asideHeader h1 {
+    font-size: 1.5rem;
+  }
+
+  .contactOption {
+    width: 16rem;
+  }
+
+  .socialOptions {
+    gap: 1.5rem;
+  }
+
+  .shape1 {
+    display: none;
+  }
+
+  .shape2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 670px) {
+  .secondSectionBody {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .mailAndPhone {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .shortLengthInput {
+    width: 400px;
+  }
+
+  .messageBox {
+    width: 400px;
+  }
+
+  .aside {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .shape1 {
+    right: 26%;
+  }
+
+  .shape2 {
+    right: 18.5%;
+  }
+}
+
+@media screen and (min-width: 718px) and (max-width: 760px) {
+  .secondSectionBody {
+    display: grid;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .aside {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .shape1 {
+    right: 39%;
+  }
+
+  .shape2 {
+    right: 32%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 690px) {
+}
+
+@media screen and (min-width: 760px) and (max-width: 992px) {
+  .form {
+    width: 52%;
+    padding: 3rem 1.5rem;
+  }
+
+  .name {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .shortLengthInput {
+    width: 300px;
+  }
+
+  .mailAndPhone {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .messageBox {
+    width: 300px;
+  }
+
+  .aside {
+    width: 48%;
+  }
+
+  .socialOptions {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1070px) and (max-width: 1085px) {
+  .form {
+    padding: 3rem 2rem;
+  }
+
+  .shortLengthInput {
+    width: 235px;
+  }
+
+  .messageBox {
+    width: 510px;
+  }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1500px) {
+  .secondSectionBody {
+    gap: 8rem;
+  }
+
+  .form {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1880px) and (max-width: 3000px) {
+  .secondSectionBody {
+    width: 50%;
+    gap: 3.5rem;
+  }
+
+  .form {
+    width: 60%;
+    padding: 3rem 2.5rem;
+  }
+
+  .messageBox {
+    width: 480px;
+  }
+
+  .shortLengthInput {
+    width: 220px;
+  }
+
+  .shape1 {
+    right: 27%;
+  }
+
+  .shape2 {
+    right: 25%;
+  }
+
+  .socialOptions {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 3100px) {
+  .secondSectionBody {
+    width: 30%;
+  }
+
+  .shape1 {
+    right: 36.5%;
+  }
+
+  .shape2 {
+    right: 35%;
+  }
+}
